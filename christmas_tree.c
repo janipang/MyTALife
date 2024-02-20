@@ -5,12 +5,14 @@ int main(){
     printf("input n: ");
     scanf("%d", &n);
 
+    //find how many row will be used
     int row=0,counter,adder=1;;
     for (counter=0; counter < n; counter+=adder,adder++){
         row++;
     }
     printf("row: %d\n",row);
 
+    //find how many column will be used
     int lwing, rwing;
     if (counter > n){
         if (row % 2 == 0){
@@ -30,6 +32,7 @@ int main(){
     }
     printf("lwing: %d, rwing: %d\n", lwing, rwing);
 
+    //print tree with alphabet
     int alpha = 0;
     int printed = 0;
     for (int i = 0; i < row; i++){
